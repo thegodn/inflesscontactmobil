@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eczanelerimiz ve İletişim</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Önceki stiller burada kalacak */
+        
+        .contact-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 40px;
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .contact-item {
+            flex-basis: 30%;
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .contact-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .contact-item i {
+            font-size: 2em;
+            color: #0066cc;
+            margin-bottom: 10px;
+        }
+        .contact-item h3 {
+            margin: 10px 0;
+            color: #333;
+        }
+        .contact-item p {
+            margin: 5px 0;
+            color: #666;
+        }
+    </style>
+</head>
+<body oncontextmenu="return false;" onselectstart="return false;" unselectable="on">
+    <div class="container">
+        <!-- Önceki içerik burada kalacak -->
+
+        <!-- Güncellenmiş iletişim bölümü -->
+        <div class="contact-container">
+            <div class="contact-item" onclick="window.open('https://www.google.com/maps/search/?api=1&query=Cumhuriyet+Mah.+Bengi+Sk.+Zin-D+Diamond+80+Çekmeköy+İstanbul', '_blank')">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Adres</h3>
+                <p>Cumhuriyet Mah. Bengi Sk.<br>Zin-D Diamond 80<br>Çekmeköy / İstanbul</p>
+            </div>
+            <div class="contact-item" onclick="window.open('https://wa.me/905066043205', '_blank')">
+                <i class="fas fa-phone"></i>
+                <h3>Telefon</h3>
+                <p>+90 506 604 3205</p>
+            </div>
+            <div class="contact-item" onclick="window.location.href='mailto:info@infless.com'">
+                <i class="fas fa-envelope"></i>
+                <h3>E-Posta</h3>
+                <p>info@infless.com</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Önceki script içeriği burada kalacak
+    </script>
+</body>
+</html>
